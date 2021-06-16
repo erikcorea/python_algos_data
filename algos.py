@@ -1,5 +1,5 @@
 ###Linear Search###
-"""
+
 def linear_search(list, target):
     
    ### Returns the index position of the target if found, else returns None
@@ -23,10 +23,10 @@ verify(result)
 
 result = linear_search(numbers,6)
 verify(result)
-"""
+
 
 ###Binary Search###
-"""
+
 def binary_search(list, target):
     first = 0
     last = len(list) - 1
@@ -58,7 +58,7 @@ verify(result)
 result = binary_search(numbers,6)
 verify(result)
 
-"""
+
 
 ###Recursive Binary###
 def recursive_binary_search(list, target):

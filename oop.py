@@ -10,7 +10,7 @@ string = "hello"
 
 
 ###CLASSES### 
-"""
+
 class Dog:
     def __init__(self, name, age):
         self.name = name
@@ -43,9 +43,9 @@ print(d2.get_age())
 
 print(d.add_one(5))
 print(type(d))
-"""
 
-"""
+
+
 class Student:
     def __init__(self, name, age, grade):
         self.name = name
@@ -83,11 +83,11 @@ course.add_student(s1)
 course.add_student(s2)
 print(course.add_student(s3))
 print(course.get_average_grade())
-"""
+
 
 
 ###INHERITANCE###
-"""
+
 class Pet:
     def __init__(self, name, age):
         self.name = name
@@ -133,10 +133,10 @@ d.speak()
 
 f = Fish("Bubbles", 10)
 f.show()
-"""
+
 
 ###CLASS ATTRIBUTES###
-"""
+
 class Person:
     number_of_people = 0 # nop is for the whole class not for one specific person
 
@@ -156,7 +156,7 @@ p1 = Person("Tim")
 p2 = Person("Jill")
 
 print(Person.number_of_people_())
-"""
+
 
 ###STATIC METHODS###
 class Math:
