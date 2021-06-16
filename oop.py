@@ -87,4 +87,91 @@ print(course.get_average_grade())
 
 
 ###INHERITANCE###
+"""
+class Pet:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old")
 
+    def speak(self):
+        print("I don't know what I say")
+
+
+class Cat(Pet):
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
+
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old and I am {self.color}")
+
+    def speak(self):
+        print("Meow")
+
+class Dog(Pet):
+    def speak(self):
+        print("Bark")
+
+class Fish(Pet):
+    pass
+
+
+p = Pet("Tim", 19)
+p.show()
+p.speak()
+
+c = Cat("Bill", 34, "black")
+c.show()
+c.speak()
+
+d = Dog("Jill", 25)
+d.show()
+d.speak()
+
+f = Fish("Bubbles", 10)
+f.show()
+"""
+
+###CLASS ATTRIBUTES###
+"""
+class Person:
+    number_of_people = 0 # nop is for the whole class not for one specific person
+
+    def __init__(self, name):
+        self.name = name
+        Person.add_person()
+
+    @classmethod
+    def number_of_people_(cls):
+        return cls.number_of_people
+
+    @classmethod
+    def add_person(cls):
+        cls.number_of_people += 1
+
+p1 = Person("Tim")
+p2 = Person("Jill")
+
+print(Person.number_of_people_())
+"""
+
+###STATIC METHODS###
+class Math:
+
+    @staticmethod
+    def add5(x):
+        return x + 5
+
+    @staticmethod
+    def add10(x):
+        return x + 10
+
+    @staticmethod
+    def pr():
+        print("run")
+
+print(Math.add5(5))
+Math.pr()
